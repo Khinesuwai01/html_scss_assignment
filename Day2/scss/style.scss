@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__logo {
+    background-color: #000;
+    color: #fff;
+    p {
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
+
+nav{
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        background-color: #693b81;
+        gap: 1px;
+        li {
+            text-decoration: none;
+            display: inline-block;
+            width: calc(100% / 3);
+            text-align: center;
+            border-right: 1px solid #fff;
+            &:hover {
+                color: #300060;
+                border-bottom: 2px solid #000000;
+            }
+            a {
+                display: block;
+                padding: 10px;
+                margin: 10px;
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.anime-img {
+    width: 1000px;
+    .anime {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    &__img-fluid {
+        overflow: hidden;
+    }
+    &__img {
+        width: calc(100% / 3 - 12px);
+
+        img {
+            width: 100%;
+            transition: 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .description{
+        dt {
+            background-color: #af7ad8;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        dd {
+            padding: 10px;
+            margin-left: 20px;
+        }
+        dt::after{
+            content: ' \002B';
+            align-content: right;
+        }
+    }
+}
+
+.text-box {
+    transform: skewX(-30deg);
+    margin: 0 30px;
+    padding: 15px;
+    border: 1px solid #36007d;
+    border-right: 3px solid #36007d;
+    border-bottom: 3px solid #36007d;
+    box-shadow: 1px 5px 5px;
+    text-align: center;
+    &:hover{
+        background-color: #3b1561;
+    }
+    
+    a {
+        padding: 10px;
+        text-decoration: none;
+        color: #714fa0;
+        &:hover{
+            color: #af7ad8;
+        }
+    }
+}
+
+  
+.mx-auto {
+    margin: 0 auto;
+
+}
